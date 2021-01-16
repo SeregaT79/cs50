@@ -1,0 +1,23 @@
+lab50:
+  files:
+    - !include foo.c
+    - !include foo.h
+
+lab50:
+  files:
+    - !include foo/bar.c
+    - !include foo/bar.h
+
+lab50:
+  files:
+    - !include foo/
+
+lab50:
+  files:
+    - !include "foo/*.c"
+    - !include "foo/*.h"
+
+lab50:
+  files:
+    - !exclude "*"
+    - !include "foo.*"
